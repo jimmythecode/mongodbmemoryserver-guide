@@ -1,6 +1,6 @@
 // test/post.test.ts
 import { IPost, Post } from '../models/Post';
-import * as dbHandler from './utils/db';
+import * as dbHandler from './utils/connect';
 
 beforeAll(async () => {
     await dbHandler.connect()
@@ -11,7 +11,7 @@ afterEach(async () => {
 });
 
 afterAll(async () => {
-    await dbHandler.closeDatabase()
+    await dbHandler.disconnect()
 });
 
 describe('post test', () => {
