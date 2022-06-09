@@ -1,18 +1,18 @@
 // test/post.test.ts
 import { IPost, Post } from '../models/Post';
-import * as dbHandler from './utils/connect';
+// import * as dbHandler from './utils/connect';
 
-beforeAll(async () => {
-    await dbHandler.connect()
-});
+// beforeAll(async () => {
+//     await dbHandler.connect()
+// });
 
-afterEach(async () => {
-    await dbHandler.clearDatabase()
-});
+// afterEach(async () => {
+//     await dbHandler.clearDatabase()
+// });
 
-afterAll(async () => {
-    await dbHandler.disconnect()
-});
+// afterAll(async () => {
+//     await dbHandler.disconnect()
+// });
 
 describe('post test', () => {
     it('can be created correctly', async () => {
