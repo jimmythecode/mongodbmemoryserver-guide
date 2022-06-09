@@ -1,5 +1,5 @@
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { config } from './utils/config';
+import config from './utils/config';
 
 export = async function globalTeardown() {
   if (config.Memory) { // Config to decided if an mongodb-memory-server instance should be used

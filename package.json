@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "startDev": "nodemon",
-    "testJest": "jest"
+    "testJest": "jest",
+    "clearCache": "jest --clearCache"
   },
   "keywords": [],
   "author": "",
